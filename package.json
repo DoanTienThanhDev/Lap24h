@@ -8,12 +8,12 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "pod": "cd ios && pod install"
+    "pod": "cd ios && pod install && cd"
   },
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.68.0",
-    "react-native-navigation": "^7.26.0"
+    "react-native-vector-icons": "9.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
