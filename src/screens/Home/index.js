@@ -1,14 +1,23 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, SafeAreaView} from 'react-native';
 import React from 'react';
+import {RNView, RNText} from '../../components';
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <Text>index</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <RNView fill loading={false}>
+        <RNText color={'red'} pHoz={28}>
+          Loading
+        </RNText>
+      </RNView>
+    </SafeAreaView>
   );
 };
 
 export default Home;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

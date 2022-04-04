@@ -1,14 +1,41 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const RNButton = () => {
+const RNButton = ({
+  fill,
+  children,
+  mTop,
+  mBottom,
+  mLeft,
+  mRight,
+  pTop,
+  pBottom,
+  pLeft,
+  pRight,
+  pHoz,
+  pVer,
+  mHoz,
+  mVer,
+  margin,
+  color,
+  w,
+  h,
+  style,
+  center,
+  ...more
+}) => {
   return (
-    <View>
+    <TouchableOpacity style={styles.container}>
       <Text>RNButton</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
 export default RNButton;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
