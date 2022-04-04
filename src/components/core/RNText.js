@@ -26,6 +26,9 @@ const RNText = ({
   textAlign,
   underLine,
   lines,
+  size,
+  fontWeight,
+  fontFamily,
   onPress,
   ...more
 }) => {
@@ -52,6 +55,9 @@ const RNText = ({
         color && {color: color},
         w && {width: w},
         h && {height: h},
+        fontFamily && {fontFamily},
+        fontWeight && {fontWeight},
+        size && {fontSize: size},
         textAlign && {textAlign: textAlign},
       ]}
       onPress={onPress && onPress}

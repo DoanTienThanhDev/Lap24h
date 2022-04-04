@@ -1,14 +1,12 @@
 import {StyleSheet, SafeAreaView} from 'react-native';
 import React from 'react';
-import {RNView, RNText} from '../../components';
+import {RNView, RNText, RNButton} from '../../components';
 
 const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <RNView fill loading={false}>
-        <RNText color={'red'} pHoz={28}>
-          Loading
-        </RNText>
+      <RNView fill loading={false} pVer={100} pHoz={28}>
+        <RNButton label={'Save'} />
       </RNView>
     </SafeAreaView>
   );
